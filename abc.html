@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<head>
+    <title>GPS TRACKING SYSTEM</title>
+</head>
+<style>
+    body{
+        border: 0;
+        margin: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .top
+    {
+        width: 1500px;
+        height: 100px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        background-color: blue;
+        color: white;
+    }
+
+    select
+    {
+        width: 500px;
+        height: 40px;
+        font-size: 15px;
+        border-radius: 5px;
+    }
+
+    #btn{
+        padding-bottom: 30px;
+    }
+
+    #in
+    {
+        padding-top: 20px;
+        padding-bottom: 30px;
+    }
+    button{
+        width: 200px;
+        height: 40px;
+        font-size: 30px;
+        background-color: greenyellow;
+        color: black;
+        border-radius: 10px;
+    }
+</style>
+<body>
+    <div class="top">
+        <h1>GPS BUS TRACKING SYSTEM</h1>
+    </div>
+    <div id="in">
+      <select id="input-box">
+        <option>----select bus to track-----</option>
+         <option>bus-1</option>
+         <option>bus-2</option>
+         <option>bus-3</option>
+         <option>bus-4</option>
+         <option>bus-5</option>
+         <option>bus-6</option>
+    </select>
+</div>
+<div id="btn">
+<button onclick="submit()">click to track</button>
+</div>
+
+
+<img src="https://static.vecteezy.com/system/resources/previews/027/298/467/non_2x/bus-in-the-street-free-photo.jpg" width="200px" height="200px">
+<div class="top">
+    <h5>2025 all rights reserved</h5>
+</div>
+</body>
+<script>
+function submit()
+{
+    var a = document.getElementById("input-box").value;
+
+    if(a=="bus-1")
+{
+    alert("the bus is 30kms away from our college");
+}
+
+else if(a=="bus-2")
+{
+    alert("the bus is nearer to our college");
+}
+else if(a=="bus-3")
+{
+    alert("the bus is arrived to our college");
+}
+else if(a=="bus-4")
+{
+    alert("the bus is departed from our college");
+}
+else if(a=="bus-5")
+{
+    alert("the bus is 10kms away from our college");
+}
+else if(a=="bus-6")
+{
+    alert("the bus is not yet started");
+}
+
+else{
+    alert("please select an bus to track");
+}
+
+
+}
+</script>
+</html>
